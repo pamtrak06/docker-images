@@ -1,4 +1,4 @@
-FROM alpine:latest as base
+FROM armhf/alpine:3.5 as base
 RUN apk --no-cache --update upgrade && apk --no-cache add ca-certificates
 
 FROM scratch
